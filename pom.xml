@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--SpringBoot依赖-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>edu.hb.taosijie</groupId>
+    <artifactId>redis-shopping</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>redis-shopping</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <!--thymeleaf指定位3.0版本-->
+        <thymeleaf.version>3.0.4.RELASE</thymeleaf.version>
+        <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <!--启动器-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!--这个包之后，springboot自动找templates下面的静态页，这个不要忘记导入-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <!--thymeleaf组件-->
+        <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+            <version>3.0.2.RELEASE</version>
+        </dependency>
+        <!--web组件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--mysql组件-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--lombok组件-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--test组件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--Mybatis-Plus组件-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>3.4.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
+            <version>1.9.22</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
