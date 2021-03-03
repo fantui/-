@@ -27,11 +27,11 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.1.1</version>
         </dependency>
-        <!--这个包之后，springboot自动找templates下面的静态页，这个不要忘记导入-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
+<!--        &lt;!&ndash;这个包之后，springboot自动找templates下面的静态页，这个不要忘记导入&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-freemarker</artifactId>-->
+<!--        </dependency>-->
         <!--thymeleaf组件-->
         <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf -->
         <dependency>
